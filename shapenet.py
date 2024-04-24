@@ -10,7 +10,7 @@ import torchvision
 import torchvision.models
 from torch.utils import model_zoo
 
-from normalizer import Normalizer
+from .normalizer import Normalizer
 
 
 def load_model(model_name):

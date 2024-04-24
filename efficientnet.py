@@ -8,7 +8,7 @@ import torchvision
 from efficientnet_pytorch import EfficientNet
 
 
-from normalizer import Normalizer
+from .normalizer import Normalizer
 
 
 
