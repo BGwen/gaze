@@ -33,7 +33,7 @@ BACKBONES = [
         'channels': 2048,
     },
     {
-        'type': 'efficientnet.RGBEfficientNetB5',
+        'type': 'gaze.efficientnet.RGBEfficientNetB5',
         'used_features': [
             '1._blocks.24._depthwise_conv',
             '1._blocks.26._depthwise_conv',
@@ -42,7 +42,7 @@ BACKBONES = [
         'channels': 2416,
     },
     {
-        'type': 'densenet.RGBDenseNet201',
+        'type': 'gaze.densenet.RGBDenseNet201',
         'used_features': [
             '1.features.denseblock4.denselayer32.norm1',
             '1.features.denseblock4.denselayer32.conv1',
@@ -51,7 +51,7 @@ BACKBONES = [
         'channels': 2048,
     },
     {
-        'type': 'resnext.RGBResNext50',
+        'type': 'gaze.resnext.RGBResNext50',
         'used_features': [
             '1.layer3.5.conv1',
             '1.layer3.5.conv2',
