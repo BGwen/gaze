@@ -9,9 +9,9 @@ import torch.nn.functional as F
 
 from torch.utils import model_zoo
 
-from modules import FeatureExtractor, Finalizer, DeepGazeIIIMixture, MixtureModel
+from .modules import FeatureExtractor, Finalizer, DeepGazeIIIMixture, MixtureModel
 
-from layers import (
+from .layers import (
     Conv2dMultiInput,
     LayerNorm,
     LayerNormMultiInput,
