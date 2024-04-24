@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from .efficientnet_pytorch.layers import GaussianFilterNd
+from .layers import GaussianFilterNd
 
 
 def encode_scanpath_features(x_hist, y_hist, size, device=None, include_x=True, include_y=True, include_duration=False):
