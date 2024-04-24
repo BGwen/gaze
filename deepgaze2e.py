@@ -18,7 +18,7 @@ from .layers import (
     Bias,
 )
 
-import RGBShapeNetC
+from .shapenet import RGBShapeNetC
 
 BACKBONES = [
     {
