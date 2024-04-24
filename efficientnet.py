@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import torchvision
 
-from efficientnet_pytorch import EfficientNet
+from gaze.efficientnet_pytorch.model import EfficientNet
 
 
 from .normalizer import Normalizer
