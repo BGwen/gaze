@@ -18,7 +18,6 @@ from .layers import (
     Bias,
 )
 
-import shapenet
 
 BACKBONES = [
     {
