@@ -18,11 +18,11 @@ from .layers import (
     Bias,
 )
 
-from .shapenet import RGBShapeNetC
+
 
 BACKBONES = [
     {
-        'type': 'shapenet.RGBShapeNetC',
+        'type': 'shapenet.shapenet.RGBShapeNetC',
         'used_features': [
             '1.module.layer3.0.conv2',
             '1.module.layer3.3.conv2',
@@ -147,7 +147,6 @@ class DeepGazeIIE(MixtureModel):
 
 
 def import_class(name):
-    #module_name, class_name = name.rsplit('.', 1)
-    #module = importlib.import_module(module_name)
-    class_name = name
-    return getattr(class_name)
+    module_name, class_name = name.rsplit('.', 1)
+    module = importlib.import_module(module_name)
+    return getattr(module, class_name)
