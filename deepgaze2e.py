@@ -18,11 +18,11 @@ from .layers import (
     Bias,
 )
 
-
+import shapenet
 
 BACKBONES = [
     {
-        'type': '.RGBShapeNetC',
+        'type': 'gaze.shapenet.RGBShapeNetC',
         'used_features': [
             '1.module.layer3.0.conv2',
             '1.module.layer3.3.conv2',
