@@ -18,10 +18,11 @@ from .layers import (
     Bias,
 )
 
+import shapenet.RGBShapeNetC as RGBShapeNetC
 
 BACKBONES = [
     {
-        'type': '.shapenet.RGBShapeNetC',
+        'type': 'RGBShapeNetC',
         'used_features': [
             '1.module.layer3.0.conv2',
             '1.module.layer3.3.conv2',
@@ -33,7 +34,7 @@ BACKBONES = [
         'channels': 2048,
     },
     {
-        'type': '.efficientnet.RGBEfficientNetB5',
+        'type': 'efficientnet.RGBEfficientNetB5',
         'used_features': [
             '1._blocks.24._depthwise_conv',
             '1._blocks.26._depthwise_conv',
@@ -42,7 +43,7 @@ BACKBONES = [
         'channels': 2416,
     },
     {
-        'type': '.densenet.RGBDenseNet201',
+        'type': 'densenet.RGBDenseNet201',
         'used_features': [
             '1.features.denseblock4.denselayer32.norm1',
             '1.features.denseblock4.denselayer32.conv1',
@@ -51,7 +52,7 @@ BACKBONES = [
         'channels': 2048,
     },
     {
-        'type': '.resnext.RGBResNext50',
+        'type': 'resnext.RGBResNext50',
         'used_features': [
             '1.layer3.5.conv1',
             '1.layer3.5.conv2',
