@@ -22,7 +22,7 @@ from .layers import (
 
 BACKBONES = [
     {
-        'type': 'shapenet.shapenet.RGBShapeNetC',
+        'type': '.shapenet.shapenet.RGBShapeNetC',
         'used_features': [
             '1.module.layer3.0.conv2',
             '1.module.layer3.3.conv2',
