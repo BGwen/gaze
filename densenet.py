@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import torchvision
 
-from normalizer import Normalizer
+from .normalizer import Normalizer
 
 
 
